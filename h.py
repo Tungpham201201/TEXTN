@@ -27,7 +27,27 @@ class Zefoy:
         self.services_status = {}
         self.url = 'None'
         self.text = 'Tool Zefoy'
-        url1=input("\033[1;33m link video:  ")
+	def banner(console):
+    os.system('cls' if os.name == 'nt' else 'clear')
+    brand_name =  "████████╗██╗██╗░░██╗████████╗░█████╗░██╗░░██╗\n"
+    brand_name += "╚══██╔══╝██║██║░██╔╝╚══██╔══╝██╔══██╗██║░██╔╝\n"
+    brand_name += "░░░██║░░░██║█████═╝░░░░██║░░░██║░░██║█████═╝░\n"
+    brand_name += "░░░██║░░░██║██╔═██╗░░░░██║░░░██║░░██║██╔═██╗░\n"
+    brand_name += "░░░██║░░░██║██║░╚██╗░░░██║░░░╚█████╔╝██║░╚██╗\n"
+    brand_name += "░░░╚═╝░░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝\n"
+    colors = [
+        "rgb(255,0,0)", "rgb(255,69,0)", "rgb(255,140,0)", "rgb(255,215,0)", "rgb(173,255,47)", 
+        "rgb(0,255,0)", "rgb(0,255,255)", "rgb(0,191,255)", "rgb(0,0,255)", "rgb(139,0,255)",
+        "rgb(255,0,255)"
+    ]
+    colorful_text = gradient_text(brand_name, colors)
+    console.print(colorful_text)
+    console.print("[bold green]♕ TIKTOK:[/bold green][bold purple] 🔱ROASTED_KING GG 🔱.[/bold purple]")
+    console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue].")
+    console.print(f"[bold green]♕ Zalo[/bold green]: [bold blue]{__GROUP_USERNAME__}[/bold blue].")
+    console.print(f"[bold green]♕ Youtube[/bold green]: [bold blue]@{__YOUTUBE__}[/bold blue].")
+    console.print("[bold red]==================================================[/bold red]")
+    url1=input("[bold purple]-> link video:[/bold purple]  ")
       
         self.url=url1
 
@@ -98,7 +118,7 @@ class Zefoy:
         return (self.services, self.services_status)
 
     def get_table(self, i = 1):
-        table = PrettyTable(field_names=["ID", "SERVICE", "Status"], title="Status Services", header_style="upper",border=True)
+        table = PrettyTable(field_names=["[bold yellow]ID[/bold yellow]", "[bold yellow]SERVICE[/bold yellow]", "[bold yellow]Status[/bold yellow]"], title="Status Services", header_style="upper",border=True)
         while True:
             if len(self.get_status_services()[0])>1:
                 break
@@ -107,7 +127,7 @@ class Zefoy:
         for service in self.services:
             table.add_row([f"{Fore.CYAN}{i}{Fore.RESET}", service, f"{Fore.GREEN if 'ago updated' in self.services[service] else Fore.RED}{self.services[service]}{Fore.RESET}"])
             i += 1
-        table.title = f"{Fore.WHITE} Update Bye D TTH: {len([x for x in self.services_status if self.services_status[x]])}{Fore.RESET}"
+        table.title = f"{Fore.WHITE} [bold red]TIKTOK TOOL MENU[/bold red]: {len([x for x in self.services_status if self.services_status[x]])}{Fore.RESET}"
         print(table)
 
     def find_video(self):
@@ -138,7 +158,7 @@ class Zefoy:
                 _=time.time()
                 while time.time()-2<_+zefoy:
                     t-=1
-                    print('\033[31m[ROASTED_ANONYMOUS]=>Please what: \033[1;32m{0}\033[31m '.format(t)+'second\033[1;32m',end='\r')
+                    print('[bold purple][ROASTED_ANONYMOUS][/bold purple][bold yellow]=>Please what:[/bold yellow] \033[1;32m{0}\033[31m '.format(t)+'second\033[1;32m',end='\r')
                     time.sleep(1)
                 continue
             elif 'Too many requests. Please slow' in self.video_info:
@@ -212,7 +232,7 @@ class Zefoy:
             try:
                 ctypes.windll.kernel32.SetConsoleTitleA(self.text.encode())
                 video_info = self.get_video_info()
-                self.text = f"Views: {video_info['viewCount']} | Hearts: {video_info['likeCount']} | Comment: {video_info['commentCount']} | Favorites: {video_info['favoritesCount']} | Followers: {video_info['followersCount']}"
+                self.text = f"[bold purple]Views:[/bold purple] {video_info['viewCount']} | [bold purple]Hearts:[/bold purple] {video_info['likeCount']} | [bold purple]Comment:[/bold purple] {video_info['commentCount']} | [bold purple]Favorites:[/bold purple] {video_info['favoritesCount']} | [bold purple]Followers:[/bold purple] {video_info['followersCount']}"
             except:
                 pass
             time.sleep(5)
