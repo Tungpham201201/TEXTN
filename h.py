@@ -30,7 +30,7 @@ print(f'''\033[1;32m 《Copy link video dán vào bên dưới》 \033[1;33m
                \033[1;36m4.Facebook: Phạm Thanh Tùng
                \033[0;35m5.
               [-----------------------------]
-                \033[1;32m Hôm Nay: %m:%d:%y-%X:%p \033[1;33m''')
+                \033[1;32m Hôm Nay: %m%d%y %X-%p \033[1;33m''')
 
 class Zefoy:
     def __init__(self):
