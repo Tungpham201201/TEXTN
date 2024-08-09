@@ -14,9 +14,9 @@ from urllib.parse import urlparse, unquote, quote
 from string import ascii_letters, digits
 os.system("cls" if os.name == "nt" else "clear")
 
-print(f'''\033[1;32m       《Copy link video dán vào bên dưới》 \033[1;33m
+print(f'''\033[1;32m
     ████████╗██╗██╗░░██╗████████╗░█████╗░██╗░░██╗
-    ╚══██╔══╝██║██║░██╔╝╚══██╔══╝██╔══██╗██║░██╔╝
+   \033[1;33m╚══██╔══╝██║██║░██╔╝╚══██╔══╝██╔══██╗██║░██╔╝
     ░░░██║░░░██║█████═╝░░░░██║░░░██║░░██║█████═╝░
    \033[1;36m ░░░██║░░░██║██╔═██╗░░░░██║░░░██║░░██║██╔═██╗░
     ░░░██║░░░██║██║░╚██╗░░░██║░░░╚█████╔╝██║░╚██╗
@@ -117,7 +117,7 @@ class Zefoy:
         return (self.services, self.services_status)
 
     def get_table(self, i = 1):
-        table = PrettyTable(field_names=["\033[1;36mID", "\033[1;36mSERVICE", "\033[1;36mStatus"], title="Status Services", header_style="upper",border=True)
+        table = PrettyTable(field_names=["ID", "SERVICE", "Status"], title="Status Services", header_style="upper",border=True)
         while True:
             if len(self.get_status_services()[0])>1:
                 break
@@ -126,7 +126,7 @@ class Zefoy:
         for service in self.services:
             table.add_row([f"{Fore.CYAN}{i}{Fore.RESET}", service, f"{Fore.GREEN if 'ago updated' in self.services[service] else Fore.RED}{self.services[service]}{Fore.RESET}"])
             i += 1
-        table.title = f"{Fore.WHITE} [bold red]TIKTOK TOOL MENU[/bold red]: {len([x for x in self.services_status if self.services_status[x]])}{Fore.RESET}"
+        table.title = f"{Fore.WHITE} TIKTOK TOOL MENU: {len([x for x in self.services_status if self.services_status[x]])}{Fore.RESET}"
         print(table)
 
     def find_video(self):
