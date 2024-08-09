@@ -90,7 +90,7 @@ class Zefoy:
         self.services_status = {}
         self.url = 'None'
         self.text = 'Tool Zefoy'
-	url1=input("\033[1;33m  link video:  ")
+        url1=input("\033[1;33m link video:  ")
       
         self.url=url1
 
