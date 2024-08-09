@@ -13,10 +13,8 @@ from colorama import init, Fore
 from urllib.parse import urlparse, unquote, quote
 from string import ascii_letters, digits
 os.system("cls" if os.name == "nt" else "clear")
-else:
-link_key=post_url['shortenedUrl']
 
-nhap_key=input(f'''\033[1;32m Link lấy key: \033[1;33m{link_key}
+print(f'''\033[1;32m Link lấy key: \033[1;33m
 
       \033[1;36m ▄▄▄█████▓ ██▀███   ▄▄▄       ███▄    █ 
 
