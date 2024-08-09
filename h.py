@@ -30,7 +30,7 @@ print(f'''\033[1;32m
         \033[1;36m4.Facebook: Phạm Thanh Tùng
         \033[0;35m5.Telegram: Roasted2001
       [====================================]
-        \033[0;15m ╰☜ Cảm ơn đã sử dụng tool của tôi ☞╯\033[0;15m \n             ╰☜ Chúc một ngày tốt lành ☞╯''')
+        \033[31m ╰☜ Cảm ơn đã sử dụng tool của tôi ☞╯ \n\033[31m             ╰☜ Chúc một ngày tốt lành ☞╯''')
 
 class Zefoy:
     def __init__(self):
