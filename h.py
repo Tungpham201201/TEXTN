@@ -138,7 +138,7 @@ class Zefoy:
                 _=time.time()
                 while time.time()-2<_+zefoy:
                     t-=1
-                    print('\033[31m[TranHai]=>Please what: \033[1;32m{0}\033[31m '.format(t)+'second\033[1;32m',end='\r')
+                    print('\033[31m[ROASTED_ANONYMOUS]=>Please what: \033[1;32m{0}\033[31m '.format(t)+'second\033[1;32m',end='\r')
                     time.sleep(1)
                 continue
             elif 'Too many requests. Please slow' in self.video_info:
