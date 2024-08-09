@@ -28,26 +28,7 @@ class Zefoy:
         self.url = 'None'
         self.text = 'Tool Zefoy'
 	    
-    os.system('cls' if os.name == 'nt' else 'clear')
-    brand_name =  "████████╗██╗██╗░░██╗████████╗░█████╗░██╗░░██╗\n"
-    brand_name += "╚══██╔══╝██║██║░██╔╝╚══██╔══╝██╔══██╗██║░██╔╝\n"
-    brand_name += "░░░██║░░░██║█████═╝░░░░██║░░░██║░░██║█████═╝░\n"
-    brand_name += "░░░██║░░░██║██╔═██╗░░░░██║░░░██║░░██║██╔═██╗░\n"
-    brand_name += "░░░██║░░░██║██║░╚██╗░░░██║░░░╚█████╔╝██║░╚██╗\n"
-    brand_name += "░░░╚═╝░░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝\n"
-    colors = [
-        "rgb(255,0,0)", "rgb(255,69,0)", "rgb(255,140,0)", "rgb(255,215,0)", "rgb(173,255,47)", 
-        "rgb(0,255,0)", "rgb(0,255,255)", "rgb(0,191,255)", "rgb(0,0,255)", "rgb(139,0,255)",
-        "rgb(255,0,255)"
-    ]
-    colorful_text = gradient_text(brand_name, colors)
-    console.print(colorful_text)
-    console.print("[bold green]♕ TIKTOK:[/bold green][bold purple] 🔱ROASTED_KING GG 🔱.[/bold purple]")
-    console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue].")
-    console.print(f"[bold green]♕ Zalo[/bold green]: [bold blue]{__GROUP_USERNAME__}[/bold blue].")
-    console.print(f"[bold green]♕ Youtube[/bold green]: [bold blue]@{__YOUTUBE__}[/bold blue].")
-    console.print("[bold red]==================================================[/bold red]")
-    url1=input("[bold purple]-> link video:[/bold purple]  ")
+    url1=input("[bold green]♕ TIKTOK:[/bold green][bold purple] 🔱ROASTED_KING GG 🔱.[/bold purple]"\n"[bold green]♕ Telegram[/bold green]: [bold blue]@Roasted2001[/bold blue]\n"[bold green]♕ Zalo[/bold green]: [bold blue]0983544223[/bold blue]\n"[bold green]♕ Youtube[/bold green]: [bold blue]@roasted_2001[/bold blue]\n"[bold red]==================================================[/bold red]"\n"[bold purple]-> link video:[/bold purple]  ")
       
         self.url=url1
 
