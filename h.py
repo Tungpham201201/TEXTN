@@ -30,7 +30,7 @@ print(f'''\033[1;32m       《Copy link video dán vào bên dưới》 \033[1;3
         \033[1;36m4.Facebook: Phạm Thanh Tùng
         \033[0;35m5.Telegram: Roasted2001
       [====================================]
-        \033[1;32m Cảm ơn đã sử dụng tool của tôi\033[1;33m \n     Chúc một ngày tốt lành''')
+        \033[1;32m Cảm ơn đã sử dụng tool của tôi\033[1;36m \n           Chúc một ngày tốt lành''')
 
 class Zefoy:
     def __init__(self):
@@ -46,7 +46,7 @@ class Zefoy:
         self.services_status = {}
         self.url = 'None'
         self.text = 'Tool Zefoy'
-        url1=input("\033[1;33m                => link video:  ")
+        url1=input("\033[1;33m       => link video:  ")
       
         self.url=url1
 
@@ -117,7 +117,7 @@ class Zefoy:
         return (self.services, self.services_status)
 
     def get_table(self, i = 1):
-        table = PrettyTable(field_names=["[bold yellow]ID[/bold yellow]", "[bold yellow]SERVICE[/bold yellow]", "[bold yellow]Status[/bold yellow]"], title="Status Services", header_style="upper",border=True)
+        table = PrettyTable(field_names=["\033[1;36mID", "\033[1;36mSERVICE", "\033[1;36mStatus"], title="Status Services", header_style="upper",border=True)
         while True:
             if len(self.get_status_services()[0])>1:
                 break
