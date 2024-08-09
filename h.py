@@ -14,7 +14,7 @@ from urllib.parse import urlparse, unquote, quote
 from string import ascii_letters, digits
 os.system("cls" if os.name == "nt" else "clear")
 
-print(f'''\033[1;32m 《Copy link video dán vào bên dưới》 \033[1;33m
+print(f'''\033[1;32m       《Copy link video dán vào bên dưới》 \033[1;33m
     ████████╗██╗██╗░░██╗████████╗░█████╗░██╗░░██╗
     ╚══██╔══╝██║██║░██╔╝╚══██╔══╝██╔══██╗██║░██╔╝
     ░░░██║░░░██║█████═╝░░░░██║░░░██║░░██║█████═╝░
@@ -29,8 +29,8 @@ print(f'''\033[1;32m 《Copy link video dán vào bên dưới》 \033[1;33m
         \033[1;36m3.Zalo: 0983544223
         \033[1;36m4.Facebook: Phạm Thanh Tùng
         \033[0;35m5.Telegram: Roasted2001
-         [====================================]
-           \033[1;32m Cảm ơn đã sử dụng tool của tôi\033[1;33m \n     Chúc một ngày tốt lành''')
+      [====================================]
+        \033[1;32m Cảm ơn đã sử dụng tool của tôi\033[1;33m \n     Chúc một ngày tốt lành''')
 
 class Zefoy:
     def __init__(self):
@@ -46,7 +46,7 @@ class Zefoy:
         self.services_status = {}
         self.url = 'None'
         self.text = 'Tool Zefoy'
-        url1=input("\033[1;33m                       => link video:  ")
+        url1=input("\033[1;33m                => link video:  ")
       
         self.url=url1
 
