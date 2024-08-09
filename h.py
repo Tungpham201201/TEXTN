@@ -16,7 +16,7 @@ os.system("cls" if os.name == "nt" else "clear")
 
 print(f'''\033[1;32m
     ████████╗██╗██╗░░██╗████████╗░█████╗░██╗░░██╗
-   \033[1;33m╚══██╔══╝██║██║░██╔╝╚══██╔══╝██╔══██╗██║░██╔╝
+    \033[1;33m╚══██╔══╝██║██║░██╔╝╚══██╔══╝██╔══██╗██║░██╔╝
     ░░░██║░░░██║█████═╝░░░░██║░░░██║░░██║█████═╝░
    \033[1;36m ░░░██║░░░██║██╔═██╗░░░░██║░░░██║░░██║██╔═██╗░
     ░░░██║░░░██║██║░╚██╗░░░██║░░░╚█████╔╝██║░╚██╗
@@ -30,7 +30,7 @@ print(f'''\033[1;32m
         \033[1;36m4.Facebook: Phạm Thanh Tùng
         \033[0;35m5.Telegram: Roasted2001
       [====================================]
-        \033[1;32m ╰☜ Cảm ơn đã sử dụng tool của tôi ☞╯\033[1;36m \n          ╰☜ Chúc một ngày tốt lành ☞╯''')
+        \033[0;35m5 ╰☜ Cảm ơn đã sử dụng tool của tôi ☞╯\033[0;35m5 \n             ╰☜ Chúc một ngày tốt lành ☞╯''')
 
 class Zefoy:
     def __init__(self):
@@ -157,7 +157,7 @@ class Zefoy:
                 _=time.time()
                 while time.time()-2<_+zefoy:
                     t-=1
-                    print('[bold purple][ROASTED_ANONYMOUS][/bold purple][bold yellow]=>Please what:[/bold yellow] \033[1;32m{0}\033[31m '.format(t)+'second\033[1;32m',end='\r')
+                    print('[ROASTED_ANONYMOUS]=>Please what: \033[1;32m{0}\033[31m '.format(t)+'second\033[1;32m',end='\r')
                     time.sleep(1)
                 continue
             elif 'Too many requests. Please slow' in self.video_info:
