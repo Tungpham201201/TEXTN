@@ -27,12 +27,7 @@ class Zefoy:
         self.services_status = {}
         self.url = 'None'
         self.text = 'Tool Zefoy'
-	self.text = "[bold green]♕ TIKTOK:[/bold green][bold purple] 🔱ROASTED_KING GG 🔱.[/bold purple]",
-		   "[bold green]♕ Telegram[/bold green]: [bold blue]@Roasted2001[/bold blue]",
-		   "[bold green]♕ Zalo[/bold green]: [bold blue]0983544223[/bold blue]",
-		   "[bold green]♕ Youtube[/bold green]: [bold blue]@roasted_2001[/bold blue]",
-		   "[bold red]==================================================[/bold red]"
-		   url1=input("\033[1;33m-> link video:  ")
+	url1=input("\033[1;33m♕ Zalo: 0983544223\n==============================================\n-> link video:  ")
       
         self.url=url1
 
