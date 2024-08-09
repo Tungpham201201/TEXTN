@@ -27,7 +27,7 @@ class Zefoy:
         self.services_status = {}
         self.url = 'None'
         self.text = 'Tool Zefoy'
-	def banner(console):
+	    
     os.system('cls' if os.name == 'nt' else 'clear')
     brand_name =  "████████╗██╗██╗░░██╗████████╗░█████╗░██╗░░██╗\n"
     brand_name += "╚══██╔══╝██║██║░██╔╝╚══██╔══╝██╔══██╗██║░██╔╝\n"
