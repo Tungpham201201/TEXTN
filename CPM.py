@@ -84,6 +84,7 @@ if login_response != 0:
                 continue
         else:
             console.print("[bold green]Đã thành công[/bold green].")
+            exit(1)
 
 def decode_nested_json(d):
     for key, value in d.items():
