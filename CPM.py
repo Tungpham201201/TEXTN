@@ -1,3 +1,9 @@
+import requests
+import json
+import datetime
+import random
+import threading
+import os
 os.system('cls' if os.name == 'nt' else 'clear')
 print(f'''\033[1;32m
 ░█████╗░░░░██████╗░░░░██╗░░██╗░░░░░███╗░░
@@ -15,12 +21,7 @@ print(f'''\033[1;32m
         \033[0;35m5.Telegram: Roasted2001
       [====================================]
  \033[31m ╰☜ Cảm ơn đã sử dụng tool của tôi ☞╯ \n\033[31m             ╰☜ Chúc một ngày tốt lành ☞╯''')
-import requests
-import json
-import datetime
-import random
-import threading
-import os
+
 try:
     from colorama import Fore
 except:
