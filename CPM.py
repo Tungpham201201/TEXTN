@@ -1,11 +1,4 @@
-import requests
-import json
-import datetime
-import random
-import threading
-import os
-
-    print(f'''\033[1;32m
+   print(f'''\033[1;32m
 ░█████╗░░░░██████╗░░░░██╗░░██╗░░░░░███╗░░
 \033[1;33m██╔══██╗░░░██╔══██╗░░░██║░██╔╝░░░░████║░░\
 ██║░░╚═╝░░░██████╔╝░░░█████═╝░░░░██╔██║░░
@@ -20,7 +13,13 @@ import os
         \033[1;36m4.Facebook: Phạm Thanh Tùng
         \033[0;35m5.Telegram: Roasted2001
       [====================================]
-        \033[31m ╰☜ Cảm ơn đã sử dụng tool của tôi ☞╯ \n\033[31m             ╰☜ Chúc một ngày tốt lành ☞╯''')
+ \033[31m ╰☜ Cảm ơn đã sử dụng tool của tôi ☞╯ \n\033[31m             ╰☜ Chúc một ngày tốt lành ☞╯''')
+import requests
+import json
+import datetime
+import random
+import threading
+import os
 try:
     from colorama import Fore
 except:
