@@ -1,4 +1,5 @@
-   print('''\033[1;32m
+os.system('cls' if os.name == 'nt' else 'clear')
+print(f'''\033[1;32m
 ░█████╗░░░░██████╗░░░░██╗░░██╗░░░░░███╗░░
 \033[1;33m██╔══██╗░░░██╔══██╗░░░██║░██╔╝░░░░████║░░\
 ██║░░╚═╝░░░██████╔╝░░░█████═╝░░░░██╔██║░░
@@ -53,7 +54,7 @@ headers = {
 }
 
 
-
+if __name__ == "__main__":
 token = input(f"{Fore.RESET}[{Fore.LIGHTBLUE_EX}+{Fore.RESET}] \033[1;32m token: \033[1;32m")
 ID = input(f"[{Fore.LIGHTBLUE_EX}+{Fore.RESET}] \033[1;32m id: \033[1;32m")
 
