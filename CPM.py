@@ -76,16 +76,6 @@ if login_response != 0:
             elif login_response == 101:
                 console.print("[bold red]Sai ID[/bold red].")
                 sleep(2)
-                continue
-                elif login_response == 103:
-            else:
-                console.print("[bold red]Hãy thử lại[/bold red].")
-                console.print("[bold yellow]⚠ Note: Hãy chắc chắn rằng bạn đã điền đầy đủ ⚠[/bold yellow]")
-                sleep(2)
-                continue
-        else:
-            console.print("[bold green]Đã thành công[/bold green].")
-            exit(1)
 
 def decode_nested_json(d):
     for key, value in d.items():
