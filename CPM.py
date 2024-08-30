@@ -56,8 +56,8 @@ headers = {
 
 
 if __name__ == "__main__":
-token = input(f"{Fore.RESET}[{Fore.LIGHTBLUE_EX}+{Fore.RESET}] \033[1;32m token: \033[1;32m")
-ID = input(f"[{Fore.LIGHTBLUE_EX}+{Fore.RESET}] \033[1;32m id: \033[1;32m")
+token = input(f"{Fore.RESET}[{Fore.LIGHTBLUE_EX}+{Fore.RESET}] \033[1;32m token: ")
+ID = input(f"[{Fore.LIGHTBLUE_EX}+{Fore.RESET}] \033[1;32m id: ")
 
 def decode_nested_json(d):
     for key, value in d.items():
