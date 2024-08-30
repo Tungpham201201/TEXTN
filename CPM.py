@@ -4,6 +4,7 @@ import datetime
 import random
 import threading
 import os
+os.system('cls' if os.name == 'nt' else 'clear')
 print(f'''\033[1;32m
        ░█████╗░░░░██████╗░░░░██╗░░██╗░░░░░███╗░░
        \033[1;33m██╔══██╗░░░██╔══██╗░░░██║░██╔╝░░░░████║░░
