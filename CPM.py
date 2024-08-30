@@ -77,6 +77,7 @@ if login_response != 0:
                 console.print("[bold red]Sai ID[/bold red].")
                 sleep(2)
                 continue
+                elif login_response == 103:
             else:
                 console.print("[bold red]Hãy thử lại[/bold red].")
                 console.print("[bold yellow]⚠ Note: Hãy chắc chắn rằng bạn đã điền đầy đủ ⚠[/bold yellow]")
