@@ -54,8 +54,6 @@ headers = {
     "Accept-Encoding": "gzip"
 }
 
-
-if __name__ == "__main__":
 token = input(f"{Fore.RESET}[{Fore.LIGHTBLUE_EX}+{Fore.RESET}] token: ")
 ID = input(f"[{Fore.LIGHTBLUE_EX}+{Fore.RESET}] id: ")
 
