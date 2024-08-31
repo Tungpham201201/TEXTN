@@ -53,8 +53,8 @@ headers = {
     "Accept-Encoding": "gzip"
 }
 
-token = input(f"{Fore.RESET}[{Fore.LIGHTYELLOW_EX}+{Fore.RESET}] [{Fore.LIGHTGREEN_EX}Token bot: {Fore.RESET}]")
-ID = input(f"[{Fore.LIGHTYELLOW_EX}+{Fore.RESET}] [{Fore.LIGHTGREEN_EX}Id của bạn: {Fore.RESET}]")
+token = input(f"{Fore.LIGHTRED_EX}《 {Fore.RESET}{Fore.LIGHTYELLOW_EX}+{Fore.RESET}{Fore.LIGHTRED_EX} 》{Fore.RESET}{Fore.LIGHTGREEN_EX}Token bot: {Fore.RESET}")
+ID = input(f"{Fore.LIGHTRED_EX}《 {Fore.RESET}{Fore.LIGHTYELLOW_EX}+{Fore.RESET}{Fore.LIGHTRED_EX} 》{Fore.RESET}{Fore.LIGHTGREEN_EX}Id của bạn: {Fore.RESET}")
 
 def decode_nested_json(d):
     for key, value in d.items():
